@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -26,6 +25,6 @@ public class FunctionJava7WithLambdaStyleTest {
             listOfLengths.add(function.apply(name));
         }
 
-        assertThat(listOfLengths, is(equalTo(Arrays.asList(4,5,4,4,6,6))));
+        assertThat(listOfLengths, is(equalTo(Arrays.asList(4, 5, 4, 4, 6, 6))));
     }
 }

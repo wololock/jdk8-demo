@@ -3,7 +3,6 @@ package pl.jug.torun.jdk8.example.person;
 import pl.jug.torun.jdk8.chapter3.Person;
 
 import java.time.LocalDate;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 

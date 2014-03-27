@@ -3,13 +3,10 @@ package pl.jug.torun.jdk8.example.person;
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Ordering;
 import pl.jug.torun.jdk8.chapter3.Person;
 
 import java.time.LocalDate;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 

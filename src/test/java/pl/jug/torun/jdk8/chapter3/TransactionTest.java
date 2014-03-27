@@ -10,9 +10,9 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
-import static org.hamcrest.Matchers.*;
-import static org.hamcrest.MatcherAssert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 
 public class TransactionTest {
 
@@ -108,7 +108,7 @@ public class TransactionTest {
         //when:
         Optional<Transaction> oldestTransaction = transactions.stream()
                 .collect(Collectors.minBy(
-                        Comparator.comparing(Transaction::getCreateDate))
+                                Comparator.comparing(Transaction::getCreateDate))
                 );
 
 

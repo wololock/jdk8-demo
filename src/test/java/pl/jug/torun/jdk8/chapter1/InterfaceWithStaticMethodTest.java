@@ -24,14 +24,16 @@ public class InterfaceWithStaticMethodTest {
         assertThat(
                 Arrays.asList(Foo.class.getMethods()).stream()
                         .map(Method::getName)
-                        .anyMatch(name -> name.equals("nonInheritedStaticMethod")), is(equalTo(true)));
+                        .anyMatch(name -> name.equals("nonInheritedStaticMethod")), is(equalTo(true))
+        );
     }
 
     @Test
     public void doesNotContainInheritedStaticMethod() {
         assertThat(
                 Arrays.asList(Foo.class.getMethods()).stream()
-                    .map(Method::getName)
-                    .noneMatch(name -> name.equals("itWorks")), is(equalTo(true)));
+                        .map(Method::getName)
+                        .noneMatch(name -> name.equals("itWorks")), is(equalTo(true))
+        );
     }
 }

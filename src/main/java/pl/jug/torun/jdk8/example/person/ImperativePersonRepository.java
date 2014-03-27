@@ -26,7 +26,7 @@ public class ImperativePersonRepository implements PersonRepository {
     @Override
     public List<String> convertToListOfNames(List<Person> people) {
         List<String> namesList = new LinkedList<>();
-        for (Person person: people) {
+        for (Person person : people) {
             namesList.add(person.getName());
         }
         return namesList;

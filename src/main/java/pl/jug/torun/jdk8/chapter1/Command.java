@@ -1,7 +1,7 @@
 package pl.jug.torun.jdk8.chapter1;
 
 @FunctionalInterface
-public interface Command<T,V> {
+public interface Command<T, V> {
     V execute(T parameter);
 
     default void itMayContainsDefaultMethod() {

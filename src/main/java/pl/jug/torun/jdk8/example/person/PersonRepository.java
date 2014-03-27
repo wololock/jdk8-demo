@@ -6,9 +6,6 @@ import pl.jug.torun.jdk8.example.repository.Repository;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public interface PersonRepository extends Repository<Person> {
 

@@ -1,8 +1,10 @@
 package pl.jug.torun.jdk8.chapter1;
 
 import org.junit.Test;
-import static org.hamcrest.Matchers.*;
-import static org.hamcrest.MatcherAssert.*;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 
 public class DefaultMethodMultiInheritanceExampleTest {
 
@@ -18,7 +20,7 @@ public class DefaultMethodMultiInheritanceExampleTest {
         }
     }
 
-    public class C implements A,B {
+    public class C implements A, B {
         @Override
         public int foo(Integer n) {
             return A.super.foo(n);
